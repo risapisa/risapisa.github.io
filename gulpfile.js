@@ -40,8 +40,4 @@ gulp.src(['js/*.js'])
 
 gulp.task('build', ['sass', 'js']);
 
-
-gulp.task('default', function() {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
-  gulp.watch(['js/**/*.js'], ['js']);
-});
+gulp.task('default', ['sass', 'js']);

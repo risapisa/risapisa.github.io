@@ -4,162 +4,173 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Risa's Web Resume</title>
+	  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+    <link href="assets/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="dist/scss/app.css">
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+    <div class="container">
+		<div class="nav show-on-desktops" style="margin-top: -105px;">
+			<ul>
+				<li class="bullet"><a class="current" href="#intro">Intro<span data-width="66" style="width: 66px; left: -88px;">Intro</span></a></li>
+				<li class="bullet"><a href="#about-me" class="">About Me<span data-width="133" style="width: 133px; left: -155px;">About Me</span></a></li>
+				<li class="bullet"><a href="#work" class="">Work Experience<span data-width="78" style="width: 78px; left: -100px;">Work Experience</span></a></li>
+				<li class="bullet"><a href="#school" class="">School<span data-width="122" style="width: 122px; left: -144px;">School</span></a></li>
+				<li class="bullet"><a href="#hobbies" class="">Hobbies<span data-width="120" style="width: 120px; left: -142px;">Hobbies</span></a></li>
+				<li class="bullet"><a href="#projects">Current Projects<span data-width="195" style="width: 195px; left: -217px;">Current Projects</span></a></li>
+				<li class="bullet"><a href="#contact">Contact<span data-width="237" style="width: 237px; left: -259px;">Contact</span></a></li>
+			</ul>
+		</div>
+		<div id="intro" class="row resume__section intro">
+			<div class="resume__section_text">
+				<div class="large-8 columns small-centered">
+					<h1>This is my personal website. Kind of a like a digital resume.</h1>
+					<p>Welcome to my website. I will tell you a little about myself here.</p>
+				</div>
+			</div>
+		</div>
+		<div id="about-me" class="row resume__section about-me">
+			<div class="resume__section_text">
+				<div class="large-8 columns small-centered">
+					<p>I originally hail from Austin, TX, in the USA. In 2007, I moved
+             with my family to Vancouver, British Columbia in Canada. I
+              attended the University of British Columbia from 2008 to 2015,
+               earning two Bachelors Degrees: one in Psychology and one
+                in Computer Science.</p>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<div id="work" class="row resume__section work-experience">
+      <div class="resume__section_text work">
+        <div class="large-8 columns small-centered">
+  					<h1>Work experience</h1>
+  					<ul>
+  						<li>
+                <h2>Frontend Developer, <i><a href="https://www.ueberbit.de/">UEBERBIT GmbH</a></i></h2>
+                <h4><i>Mannheim, DE - January 2016 to Present</i></h4>
+                <p>I am currently a Front-End Developer at Ueberbit GmbH.
+                   I bring visual designs of websites to life for various German
+                    companies Ueberbit has partnered with. I work primarily with
+                     Drupal 8, TYPO3, HTML5, CSS3, SASS, Foundation,
+                      and occasionally C Sharp.</p>
+              </li>
+              <li>
+                <h2>Crowd Requirements Engineering Praktikant, <i><a href="http://www.iese.fraunhofer.de/en.html">Fraunhofer IESE</a></i></h2>
+                <h4><i>Kaiserslautern, DE - July 2015 to December 2015</i></h4>
+                <p>Designed a GUI for a crowd-based requirements engineering
+                   tool being developed by the UX/RE team using Bootstrap,
+                    AngularJS, and BreezeJS.</p>
+              </li>
+              <li>
+                <h2>Software Developer in Test, <i><a href="http://go.sap.com/canada/index.html">SAP SE</a></i></h2>
+                <h4><i>Vancouver, CA - January 2014 to August 2014</i></h4>
+                <p>Tested install cases on legacy SAP software.
+                   Learned about Agile development, coding in Python, and
+                    quality assurance practices in software.</p>
+              </li>
+  					</ul>
+  				</div>
       </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
+		</div>
+		<div id="school" class="row resume__section school">
+      <div class="resume__section_text school">
+        <div class="large-8 columns small-centered">
+          <h1>Education</h1>
+          <ul>
+            <li>
+              <h2>Bachelor of Computer Science (Integrated Computer Science)
+                 with Co-operative Education</h2>
+              <h4><i><a href="http://www.ubc.ca/">University of
+              British Columbia </a>- September 2012 to November 2015</i></h4>
+              <p>A two-year second Bachelor’s degree program with a focus on
+                 software development, human-computer interaction, algorithms,
+                  integration of Computer Science and Psychology, and the
+                   application of such skills in a career.</p>
+            </li>
+            <li>
+              <h2>Bachelor of Arts, Major in Psychology</h2>
+              <h4><i><a href="http://www.ubc.ca/">University of British Columbia
+              </a> — September 2008 to May 2012</i></h4>
+              <p>A four-year Bachelor’s degree program with emphasis on
+                 understanding the many aspects of the field of Psychology and
+                  their relation to other academic disciplines. Focused on social,
+                   developmental, and abnormal psychology.</p>
+            </li>
+          </ul>
+  			</div>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
+		</div>
+		<div id="hobbies" class="row resume__section hobbies">
+      <div class="resume__section_text">
+        <div class="large-8 columns small-centered">
+          <h1>My hobbies/interests</h1>
+          <ul class="alternating-list">
+            <li>Video games</li>
+            <li>Movies/Shows</li>
+            <li>Hiking</li>
+            <li>Hanging out with friends (duh)</li>
+            <li>Traveling</li>
+          </ul>
+  			</div>
+      </div>
+		</div>
+		<div id="projects" class="row resume__section current-projects">
+      <div class="resume__section_text">
+        <div class="large-8 columns small-centered">
+          <h1>What I am currently working on</h1>
+          <ul>
+            <li>This website - har har :)</li>
+            <li>Playing Pokémon GO</li>
+            <li>Making a horror game - got an idea, but not good drawing skills!</li>
+            <li>Making a game for people who are only good at remembering
+            the lyrics to songs, like myself!</li>
+            <li>Saving up for a PS4 to play Persona 5 and Final Fantasy XV when
+            they come out</li>
+            <li>Get a lil' kitty</li>
+          </ul>
+  			</div>
+      </div>
+		</div>
+		<div id="contact" class="row resume__section contact">
+      <div class="resume__section_text contact">
+        <div class="large-12 columns small-centered">
+          <div class="contact-cards">
+            <div class="card" ontouchstart="this.classList.toggle('hover');">
+              <div class="flip">
+                <div class="front"><img src="assets/icons/foundation-icons/svgs/fi-mail.svg"></div>
+                <div class="back">
+                  <p>risanewyear.ramirez(at)gmail.com</p>
                 </div>
               </div>
             </div>
+            <div class="card" ontouchstart="this.classList.toggle('hover');">
+              <div class="flip">
+                <div class="front"><img src="assets/icons/github.svg"></div>
+                <div class="back">
+                  <p>https://github.com/risapisa<p/>
+                </div>
+              </div></div>
+            <div class="card" ontouchstart="this.classList.toggle('hover');">
+              <div class="flip">
+                <div class="front"><img src="assets/icons/linkedin.svg"></div>
+                <div class="back">
+                  <p>https://ca.linkedin.com<br>/in/risanewyearramirez</p>
+                </div>
+              </div></div>
+            <div class="card" ontouchstart="this.classList.toggle('hover');">
+              <div class="flip">
+                <div class="front"><img src="assets/icons/xing.svg"></div>
+                <div class="back">
+                  <p>https://www.xing.com/profile/<br>Risa_NewyearRamirez</p>
+                </div>
+              </div></div>
           </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>       
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>           
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
+  			</div>
       </div>
-    </div>
-
+		</div>
+	</div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>

@@ -6,7 +6,7 @@
 
 @include foundation-global-styles;
 @include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -48,3 +48,158 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+body {
+	font-size: 20px;
+}
+
+.nav {
+    position: fixed;
+    top: 50%;
+    right: 15px;
+    z-index: 100;
+}
+
+.nav.show-on-desktops {
+	display: block;
+}
+
+.resume__section_text {
+	padding-top: 30%;
+	width: 100%;
+	z-index: 2;
+	&.work, &.school {
+		padding-top: 10%;
+	}
+}
+
+ul {
+	list-style: none outside;
+}
+
+.nav ul li {
+    text-indent: -99999px;
+    margin-bottom: 8px;
+}
+
+.nav ul li a {
+    position: relative;
+		display: block;
+    width: 12px;
+    height: 12px;
+		border-radius: 1000px;
+		background: rgba(255,255,255,0.4);
+		transition: 0.6s;
+}
+
+.nav ul li a:hover {
+	background: rgba(153, 102, 255, 0.4);
+}
+
+.resume__section {
+	height: rem-calc(1104);
+	width: rem-calc(1651);
+	&.intro::before {
+		background-image:url('../../assets/imgs/intro-background.jpg');
+	}
+	&.about-me::before {
+		background: linear-gradient(92deg, #2f520c, #67a825, #92db47, #828a79);
+		background-size: 800% 800%;
+
+		-webkit-animation: Green 30s ease infinite;
+		-moz-animation: Green 30s ease infinite;
+		animation: Green 30s ease infinite;
+
+		@-webkit-keyframes Green {
+    	0%{background-position:0% 50%}
+    	50%{background-position:100% 50%}
+    	100%{background-position:0% 50%}
+		}
+		@-moz-keyframes Green {
+    	0%{background-position:0% 50%}
+    	50%{background-position:100% 50%}
+    	100%{background-position:0% 50%}
+		}
+		@keyframes Green {
+    	0%{background-position:0% 50%}
+    	50%{background-position:100% 50%}
+    	100%{background-position:0% 50%}
+		}
+	}
+	&.work-experience::before {
+		background-image:url('../../assets/imgs/sap.jpg');
+	}
+	&.school::before {
+		background-color: #002145;
+	}
+	&.hobbies::before {
+		background-image:url('../../assets/imgs/Zelda.jpg');
+	}
+	&.current-projects::before {
+		background-color: #ff9933;
+	}
+	&.contact::before {
+		background-image:url('../../assets/imgs/UBC.jpg');
+	}
+}
+
+.resume__section::before {
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+	content: "";
+	left: 0;
+	opacity: 0.6;
+	height: rem-calc(1104);
+	width: rem-calc(1651);
+}
+
+.contact-cards {
+
+	.card {
+		-webkit-perspective: 1000px;
+		perspective: 1000px;
+		display: inline-block;
+		margin: 0 1.2rem;
+	}
+
+	.card:hover .flip, .card.hover .flip {
+		transform: rotateY(180deg);
+	}
+
+	.flip, .front, .back {
+		width: rem-calc(250);
+		height: rem-calc(200);
+	}
+
+	.flip {
+		text-align: center;
+		transition: 0.6s;
+		transform-style: preserve-3d;
+		position: relative;
+
+		.front, .back {
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.front {
+			background: #867979;
+			z-index: 2;
+			padding-top: rem-calc(48);
+		}
+
+		.back {
+			background: #867979;
+			transform: rotateY(180deg);
+			padding-top: rem-calc(64);
+		}
+	}
+
+	img {
+		width: rem-calc(80);
+		height: rem-calc(80);
+	}
+}
