@@ -71,6 +71,17 @@ body {
 	&.work, &.school {
 		padding-top: 10%;
 	}
+	&.about-me {
+		padding-top: 5%;
+	}
+}
+
+a {
+	color: #0a0a0a;
+	&:hover {
+		color: #0a0a0a;
+		text-decoration: underline;
+	}
 }
 
 ul {
@@ -152,6 +163,11 @@ ul {
 	opacity: 0.6;
 	height: rem-calc(1104);
 	width: rem-calc(1651);
+}
+
+.title-row {
+	margin-bottom: rem-calc(40);
+	text-align: center;
 }
 
 .contact-cards {
