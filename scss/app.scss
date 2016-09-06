@@ -68,11 +68,21 @@ body {
 	padding-top: 30%;
 	width: 100%;
 	z-index: 2;
+	&.intro {
+		@include breakpoint(medium down) {
+			padding-top: 20%;
+		}
+	}
 	&.work, &.school {
 		padding-top: 10%;
 	}
 	&.about-me {
 		padding-top: 5%;
+	}
+	&.hobbies, &.current-projects, &.contact {
+		@include breakpoint(medium down) {
+			padding-top: 10%;
+		}
 	}
 }
 
@@ -111,7 +121,7 @@ ul {
 	height: rem-calc(1104);
 	&.intro {
 		@include breakpoint(medium down) {
-			height: rem-calc(640);
+			height: rem-calc(400);
 		}
 		@include breakpoint(small down) {
 			height: rem-calc(480);
@@ -149,20 +159,60 @@ ul {
 			}
 		}
 	}
-	&.work-experience::before {
-		background-image:url('../../assets/imgs/sap.jpg');
+	&.work-experience {
+		@include breakpoint(medium down) {
+			height: rem-calc(960);
+		}
+		@include breakpoint(small down) {
+			height: rem-calc(480);
+		}
+		&::before {
+			background-image:url('../../assets/imgs/sap.jpg');
+		}
 	}
-	&.school::before {
-		background-color: #002145;
+	&.school {
+		@include breakpoint(medium down) {
+			height: rem-calc(800);
+		}
+		@include breakpoint(small down) {
+			height: rem-calc(480);
+		}
+		&::before {
+				background-color: #002145;
+		}
 	}
-	&.hobbies::before {
-		background-image:url('../../assets/imgs/Zelda.jpg');
+	&.hobbies {
+		&::before {
+				background-image:url('../../assets/imgs/Zelda.jpg');
+		}
+		@include breakpoint(medium down) {
+			height: rem-calc(480);
+		}
+		@include breakpoint(small down) {
+			height: rem-calc(480);
+		}
 	}
-	&.current-projects::before {
-		background-color: #ff9933;
+	&.current-projects {
+		&::before {
+				background-color: #ff9933;
+		}
+		@include breakpoint(medium down) {
+			height: rem-calc(480);
+		}
+		@include breakpoint(small down) {
+			height: rem-calc(480);
+		}
 	}
-	&.contact::before {
-		background-image:url('../../assets/imgs/UBC.jpg');
+	&.contact {
+		&::before {
+			background-image:url('../../assets/imgs/UBC.jpg');
+		}
+		@include breakpoint(medium down) {
+			height: rem-calc(720);
+		}
+		@media (max-width: 600px) {
+			height: rem-calc(1040);
+		}
 	}
 }
 
@@ -183,6 +233,10 @@ ul {
 .title-row {
 	margin-bottom: rem-calc(40);
 	text-align: center;
+}
+
+h1.title-row {
+	font-weight: bold;
 }
 
 .contact-cards {
