@@ -11,28 +11,26 @@
   </head>
   <body>
     <div class="container">
-		<div class="nav" style="margin-top: -105px;">
+		<div class="nav">
 			<ul>
-				<li class="bullet"><a class="current" href="#intro">Intro<span data-width="66" style="width: 66px; left: -88px;">Intro</span></a></li>
-				<li class="bullet"><a href="#about-me" class="">About Me<span data-width="133" style="width: 133px; left: -155px;">About Me</span></a></li>
-				<li class="bullet"><a href="#work" class="">Work Experience<span data-width="78" style="width: 78px; left: -100px;">Work Experience</span></a></li>
-				<li class="bullet"><a href="#school" class="">School<span data-width="122" style="width: 122px; left: -144px;">School</span></a></li>
-				<li class="bullet"><a href="#hobbies" class="">Hobbies<span data-width="120" style="width: 120px; left: -142px;">Hobbies</span></a></li>
-				<li class="bullet"><a href="#projects">Current Projects<span data-width="195" style="width: 195px; left: -217px;">Current Projects</span></a></li>
-				<li class="bullet"><a href="#contact">Contact<span data-width="237" style="width: 237px; left: -259px;">Contact</span></a></li>
+				<li class="bullet"><a class="bullet-link intro-menu-link" href="#intro">Intro<span data-width="66" style="width: 66px; left: -88px;">Intro</span></a></li>
+				<li class="bullet"><a href="#about-me" class="bullet-link about-me-menu-link">About Me<span data-width="133" style="width: 133px; left: -155px;">About Me</span></a></li>
+				<li class="bullet"><a href="#work" class="bullet-link work-menu-link">Work Experience<span data-width="78" style="width: 78px; left: -100px;">Work Experience</span></a></li>
+				<li class="bullet"><a href="#school" class="bullet-link school-menu-link">School<span data-width="122" style="width: 122px; left: -144px;">School</span></a></li>
+				<li class="bullet"><a href="#contact" class="bullet-link contact-menu-link">Contact<span data-width="237" style="width: 237px; left: -259px;">Contact</span></a></li>
 			</ul>
 		</div>
-		<div id="intro" class="row resume__section intro">
+		<div class="row resume__section intro">
 			<div class="resume__section_text intro">
 				<div class="large-8 columns small-centered">
-					<h1 class="title-row">Welcome to my website. I will tell you a little about myself here.</h1>
+					<h1 class="title-row" id="intro">Welcome to my website. I will tell you a little about myself here.</h1>
 				</div>
 			</div>
 		</div>
 		<div id="about-me" class="row resume__section about-me">
 			<div class="resume__section_text about-me">
 				<div class="large-8 columns small-centered">
-          <h1 class="title-row">About Me</h1>
+          <h1 class="title-row" id="about-me">About Me</h1>
 					<p class="title-row">I originally hail from Austin, TX, in the USA. In 2007, I moved
              with my family to Vancouver, British Columbia in Canada. I
             attended the University of British Columbia from 2008 to 2015,
@@ -53,7 +51,7 @@
 		<div id="work" class="row resume__section work-experience">
       <div class="resume__section_text work">
         <div class="large-8 columns small-centered">
-  					<h1 class="title-row">Work experience</h1>
+  					<h1 class="title-row" id="work">Work experience</h1>
   					<ul>
   						<li>
                 <h2>Frontend Developer, <i><a href="https://www.ueberbit.de/">UEBERBIT GmbH</a></i></h2>
@@ -85,7 +83,7 @@
 		<div id="school" class="row resume__section school">
       <div class="resume__section_text school">
         <div class="large-8 columns small-centered">
-          <h1 class="title-row">Education</h1>
+          <h1 class="title-row" id="school">Education</h1>
           <ul>
             <li>
               <h2>Bachelor of Computer Science (Integrated Computer Science)
@@ -113,7 +111,7 @@
 		<div id="contact" class="row resume__section contact">
       <div class="resume__section_text contact">
         <div class="large-8 columns small-centered title-row">
-          <h1 class="title-row">Contact Me</h1>
+          <h1 class="title-row" id="contact">Contact Me</h1>
         </div>
         <div class="large-12 columns small-centered">
           <div class="contact-cards">
@@ -154,6 +152,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
     <script src="dist/js/app.js"></script>
   </body>
 </html>
