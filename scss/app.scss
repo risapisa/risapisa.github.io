@@ -80,6 +80,7 @@ body {
 		padding-top: 5%;
 	}
 	&.contact {
+		padding-top: 30%;
 		@include breakpoint(medium down) {
 			padding-top: 10%;
 		}
