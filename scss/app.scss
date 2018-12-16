@@ -49,8 +49,62 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+@font-face {
+    font-family: 'Press Start Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Press Start Regular'), local('PressStart-Regular'),
+        url(../../css/press-start-regular_1c33cba791229236ebbb7ddc56cd3b15.woff) format('woff'),
+        url(../../css/press-start-regular_1c33cba791229236ebbb7ddc56cd3b15.ttf) format('truetype');
+}
+
+
+html {
+	font-family: 'Roboto-Regular', arial;
+}
+
 body {
-	font-size: 20px;
+	font-size: 18px;
+	font-family: 'Roboto-Regular', arial;
+}
+
+h1, h2, h3, h4, h5, li {
+	font-family: 'Press Start Regular', arial;
+}
+
+.off-canvas {
+	box-shadow: 0 0 10px rgba(10,10,10,.5);
+	z-index: 1;
+}
+
+.off-canvas-content {
+	z-index: 0;
+	background: linear-gradient(92deg, #355c7d, #6c5b7b, #c06c84);
+	background-size: 800% 800%;
+
+	-webkit-animation: Purple 30s ease infinite;
+	-moz-animation: Purple 30s ease infinite;
+	animation: Purple 30s ease infinite;
+
+	@-webkit-keyframes Purple {
+  	0%{background-position:0% 50%}
+  	50%{background-position:100% 50%}
+  	100%{background-position:0% 50%}
+	}
+	@-moz-keyframes Purple {
+  	0%{background-position:0% 50%}
+  	50%{background-position:100% 50%}
+  	100%{background-position:0% 50%}
+	}
+	@keyframes Purple {
+  	0%{background-position:0% 50%}
+  	50%{background-position:100% 50%}
+  	100%{background-position:0% 50%}
+	}
+}
+
+.panel {
+	padding: 3rem;
 }
 
 .nav {
@@ -66,29 +120,6 @@ body {
 
 .nav ul li a.current {
 	background: rgba(255, 255, 0, 0.6);
-}
-
-.resume__section_text {
-	padding-top: 40%;
-	width: 100%;
-	z-index: 2;
-	&.intro {
-		@include breakpoint(medium only) {
-			padding-top: 20%;
-		}
-	}
-	&.work, &.school {
-		padding-top: 10%;
-	}
-	&.about-me {
-		padding-top: 5%;
-	}
-	&.contact {
-		padding-top: 30%;
-		@include breakpoint(medium down) {
-			padding-top: 10%;
-		}
-	}
 }
 
 a {
@@ -123,94 +154,16 @@ ul {
 }
 
 .resume__section {
-	height: rem-calc(1104);
-	&.intro {
-		@include breakpoint(medium down) {
-			height: rem-calc(400);
-		}
-		@include breakpoint(small down) {
-			height: rem-calc(480);
-		}
-		&::before {
-			background-image:url('../../assets/imgs/intro-background.jpg');
-		}
-	}
-	&.about-me {
-		@include breakpoint(small-mobile down) {
-			height: rem-calc(1200);
-		}
-		&::before {
-			background: linear-gradient(92deg, #2f520c, #67a825, #92db47, #828a79);
-			background-size: 800% 800%;
+	padding-top:5rem;
+	padding-bottom:5rem;
 
-			-webkit-animation: Green 30s ease infinite;
-			-moz-animation: Green 30s ease infinite;
-			animation: Green 30s ease infinite;
-
-			@-webkit-keyframes Green {
-	    	0%{background-position:0% 50%}
-	    	50%{background-position:100% 50%}
-	    	100%{background-position:0% 50%}
-			}
-			@-moz-keyframes Green {
-	    	0%{background-position:0% 50%}
-	    	50%{background-position:100% 50%}
-	    	100%{background-position:0% 50%}
-			}
-			@keyframes Green {
-	    	0%{background-position:0% 50%}
-	    	50%{background-position:100% 50%}
-	    	100%{background-position:0% 50%}
-			}
-		}
-	}
-	&.work-experience {
-		@include breakpoint(medium down) {
-			height: rem-calc(960);
-		}
-		@include breakpoint(small down) {
-			height: rem-calc(480);
-		}
-		&::before {
-			background-image:url('../../assets/imgs/sap.jpg');
-		}
-	}
-	&.school {
-		@include breakpoint(medium down) {
-			height: rem-calc(800);
-		}
-		@include breakpoint(small down) {
-			height: rem-calc(480);
-		}
-		&::before {
-				background-color: #002145;
-		}
-	}
-	&.contact {
-		&::before {
-			background-image:url('../../assets/imgs/UBC.jpg');
-		}
-		@include breakpoint(medium down) {
-			height: rem-calc(720);
-		}
-		@media (max-width: 600px) {
-			height: rem-calc(1040);
-		}
+	p, h4, li {
+		font-family: 'Roboto-Regular', arial !important;
 	}
 }
 
-.resume__section::before {
-	position: absolute;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	content: "";
-	left: 0;
-	opacity: 0.6;
-	height: inherit;
-	width: 100%;
-	@include breakpoint(large down) {
-		background-size: cover;
-	}
+.rounded-img {
+	border-radius: 125px !important;
 }
 
 .title-row {
@@ -224,12 +177,12 @@ h1.title-row {
 
 .contact-cards {
 	text-align: center;
+	margin-bottom: 5rem;
 
 	.card {
 		-webkit-perspective: 1000px;
 		perspective: 1000px;
 		display: inline-block;
-		margin: 0 1.2rem;
 	}
 
 	.card:hover .flip, .card.hover .flip {
@@ -237,8 +190,8 @@ h1.title-row {
 	}
 
 	.flip, .front, .back {
-		width: rem-calc(250);
-		height: rem-calc(200);
+		width: rem-calc(200);
+		height: rem-calc(180);
 	}
 
 	.flip {
@@ -255,15 +208,21 @@ h1.title-row {
 		}
 
 		.front {
-			background: #867979;
+			background: rgba(255, 255, 255, 0.9);
 			z-index: 2;
 			padding-top: rem-calc(48);
 		}
 
 		.back {
-			background: #867979;
+			background: rgba(255, 255, 255, 0.9);
 			transform: rotateY(180deg);
-			padding-top: rem-calc(64);
+			padding-top: rem-calc(48);
+		}
+
+	  p {
+			margin-left: .5rem;
+			margin-right: .5rem;
+			word-wrap: break-word;
 		}
 	}
 
