@@ -2,7 +2,6 @@
 
 @import 'settings';
 @import 'foundation';
-@import 'motion-ui';
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -46,9 +45,6 @@
 @include foundation-float-classes;
 // @include foundation-flex-classes;
 
-@include motion-ui-transitions;
-@include motion-ui-animations;
-
 @font-face {
     font-family: 'Press Start Regular';
     font-style: normal;
@@ -60,66 +56,87 @@
 
 
 html {
-	font-family: 'Roboto-Regular', arial;
+	font-family: 'Press Start Regular', arial;
+	cursor: url(../../assets/imgs/MouseCursor.png), auto;
+	&:hover {
+		cursor: url(../../assets/imgs/MouseCursor.png), auto;
+	}
 }
 
 body {
-	font-size: 18px;
-	font-family: 'Roboto-Regular', arial;
+	font-size: 16px;
+	font-family: 'Press Start Regular', arial;
 }
 
 h1, h2, h3, h4, h5, li {
 	font-family: 'Press Start Regular', arial;
 }
 
-.off-canvas {
-	box-shadow: 0 0 10px rgba(10,10,10,.5);
-	z-index: 1;
+.vertical-align {
+	vertical-align: middle;
 }
 
-.off-canvas-content {
-	z-index: 0;
-	background: linear-gradient(92deg, #355c7d, #6c5b7b, #c06c84);
-	background-size: 800% 800%;
-
-	-webkit-animation: Purple 30s ease infinite;
-	-moz-animation: Purple 30s ease infinite;
-	animation: Purple 30s ease infinite;
-
-	@-webkit-keyframes Purple {
-  	0%{background-position:0% 50%}
-  	50%{background-position:100% 50%}
-  	100%{background-position:0% 50%}
-	}
-	@-moz-keyframes Purple {
-  	0%{background-position:0% 50%}
-  	50%{background-position:100% 50%}
-  	100%{background-position:0% 50%}
-	}
-	@keyframes Purple {
-  	0%{background-position:0% 50%}
-  	50%{background-position:100% 50%}
-  	100%{background-position:0% 50%}
-	}
+.panel-parent {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	background-color: grey;
 }
 
-.panel {
-	padding: 3rem;
+.game-panel {
+	margin: auto;
+	width:75vw;
+	height:40vw;
+	background-color: beige;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-.nav {
-    position: fixed;
-    top: 50%;
-    right: 15px;
-    z-index: 100;
-		display: none;
-		&.show-on-desktops {
-			display: block;
-		}
+.start-title {
+	padding:12vw;
+	-webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+     opacity: 1;
 }
 
-.nav ul li a.current {
-	background: rgba(255, 255, 0, 0.6);
+.row {
+	height: inherit;
+}
+
+.character-sheet {
+	display: none;
+	height: inherit;
+	-webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+}
+
+.character-container {
+	padding: 1.5rem;
+}
+
+.border-right {
+	border-right: 1px solid black;
+}
+
+.tabs, .tabs-content {
+	background-color: beige;
+}
+
+.tabs-content {
+	height: 35vw;
+}
+
+.tabs-panel {
+	overflow-y:scroll;
+	height:35vw;
 }
 
 a {
@@ -132,34 +149,6 @@ a {
 
 ul {
 	list-style: none outside;
-}
-
-.nav ul li {
-    text-indent: -99999px;
-    margin-bottom: 8px;
-}
-
-.nav ul li a {
-    position: relative;
-		display: block;
-    width: 12px;
-    height: 12px;
-		border-radius: 1000px;
-		background: rgba(255,255,255,0.4);
-		transition: 0.6s;
-}
-
-.nav ul li a:hover {
-	background: rgba(255, 255, 0, 0.6);
-}
-
-.resume__section {
-	padding-top:5rem;
-	padding-bottom:5rem;
-
-	p, h4, li {
-		font-family: 'Roboto-Regular', arial !important;
-	}
 }
 
 .rounded-img {
