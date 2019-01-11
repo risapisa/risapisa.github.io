@@ -26,8 +26,26 @@
             <div class="character-container">
               <img class="thumbnail" src="assets/imgs/avatar.png">
               <ul>
-                <li>Character Name: Risa Newyear-Ramirez</li>
-                <li>Character Class: Developer</li>
+                <li class="stats-row"><label class="stats-label" for="character-name">Character Name:</label><div id="character-name" class="stats-text">Risa Newyear-Ramirez</div></li>
+                <li class="stats-row"><label class="stats-label" for="character-class">Character Class:</label><div id="character-class" class="stats-text">UI Developer</div></li>
+                <li class="stats-row"><label class="stats-label" for="character-strength">Strength:</label><div id="character-strength" class="stats-line">
+                  <div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-empty"></div><div class="stats-icon stats-empty"></div>
+                </div></li>
+                <li class="stats-row"><label class="stats-label" for="character-defense">Defense:</label><div id="character-defense" class="stats-line">
+                  <div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-empty"></div><div class="stats-icon stats-empty"></div>
+                </div></li>
+                <li class="stats-row"><label class="stats-label" for="character-accuracy">Accuracy:</label><div id="character-accuracy" class="stats-line">
+                  <div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-empty"></div><div class="stats-icon stats-empty"></div>
+                </div></li>
+                <li class="stats-row"><label class="stats-label" for="character-evade">Evade:</label><div id="character-evade" class="stats-line">
+                  <div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-empty"></div><div class="stats-icon stats-empty"></div><div class="stats-icon stats-empty"></div>
+                </div></li>
+                <li class="stats-row"><label class="stats-label" for="character-intelligence">Intelligence:</label><div id="character-intelligence" class="stats-line">
+                  <div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-empty"></div>
+                </div></li>
+                <li class="stats-row"><label class="stats-label" for="character-luck">Luck:</label><div id="character-luck" class="stats-line">
+                  <div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-full"></div><div class="stats-icon stats-empty"></div>
+                </div></li>
               </ul>
             </div>
           </div>
@@ -40,19 +58,19 @@
             </ul>
             <div class="tabs-content" data-tabs-content="character-sheet-tabs">
               <div class="tabs-panel is-active" id="aboutMe">
-                <p>I originally hail from Austin, TX, in the USA. In 2007, I moved with my family to Vancouver, British Columbia in Canada. I attended the University of British Columbia from 2008 to 2015, earning two Bachelors Degrees: one in Psychology and one in Computer Science. During the course of my studies in Computer Science, I did Co-operative Education (internships with software companies full-time). Near the end of my second degree, I moved to Mannheim, Germany. I now live in Heidelberg, Germany and I work full-lifetime with a business software company while learning German on the side.</p>
+                <p>I originally hail from Austin, TX, in the USA. In 2007, I moved with my family to Vancouver, British Columbia in Canada. I attended the University of British Columbia from 2008 to 2015, earning two Bachelors Degrees: one in Psychology and one in Computer Science. During the course of my studies in Computer Science, I did Co-operative Education (internships with software companies full-time). Near the end of my second degree, I moved to Mannheim, Germany. I now live in Heidelberg, Germany and I work full-time with SAP while learning German on the side.</p>
               </div>
               <div class="tabs-panel" id="school">
                 <ul>
                   <li>
                     <h4>Bachelor of Computer Science (Integrated Computer Science) with Co-operative Education</h4>
                     <h5><i><a href="http://www.ubc.ca/">University of
-                    British Columbia </a>- September 2012 to November 2015</i></h5>
+                    British Columbia <img src="assets/imgs/external-link-symbol.png"></a>- September 2012 to November 2015</i></h5>
                     <p>A two-year second Bachelor’s degree program with a focus on software development, human-computer interaction, algorithms, integration of Computer Science and Psychology, and the application of such skills in a career.</p>
                   </li>
                   <li>
                     <h4>Bachelor of Arts, Major in Psychology</h4>
-                    <h5><i><a href="http://www.ubc.ca/">University of British Columbia
+                    <h5><i><a href="http://www.ubc.ca/">University of British Columbia <img src="assets/imgs/external-link-symbol.png">
                     </a> — September 2008 to May 2012</i></h5>
                     <p>A four-year Bachelor’s degree program with emphasis on understanding the many aspects of the field of Psychology and their relation to other academic disciplines. Focused on social, developmental, and abnormal psychology.</p>
                   </li>
@@ -61,24 +79,24 @@
               <div class="tabs-panel" id="work">
                 <ul>
                   <li>
-                    <h4>Frontend Developer, <i><a href="https://www.sap.com/germany/index.html">SAP SE</a></i></h4>
+                    <h4>Frontend Developer, <i><a href="https://www.sap.com/germany/index.html">SAP SE <img src="assets/imgs/external-link-symbol.png"></a></i></h4>
                     <h5><i>Walldorf, DE - February 2017 to Present</i></h5>
                     <p>I work with the HALM (HANA Application Lifecycle Management) team within CLM (Cloud Lifecycle Management) focusing primarily on the user interface for Transport Management Service.</p>
                   </li>
                   <li>
-                    <h4>Frontend Developer, <i><a href="https://www.ueberbit.de/">UEBERBIT GmbH</a></i></h4>
+                    <h4>Frontend Developer, <i><a href="https://www.ueberbit.de/">UEBERBIT GmbH <img src="assets/imgs/external-link-symbol.png"></a></i></h4>
                     <h5><i>Mannheim, DE - January 2016 to February 2017</i></h5>
                     <p>Worked as a Front-End Developer at Ueberbit GmbH. I brought visual designs of websites to life for various German companies Ueberbit has partnered with. I worked primarily with Drupal 8, TYPO3, HTML5, CSS3, SASS, Foundation, and occasionally C Sharp.</p>
                   </li>
                   <li>
-                    <h4>Crowd Requirements Engineering Praktikant, <i><a href="http://www.iese.fraunhofer.de/en.html">Fraunhofer IESE</a></i></h4>
+                    <h4>Crowd Requirements Engineering Praktikant, <i><a href="http://www.iese.fraunhofer.de/en.html">Fraunhofer IESE <img src="assets/imgs/external-link-symbol.png"></a></i></h4>
                     <h5><i>Kaiserslautern, DE - July 2015 to December 2015</i></h5>
                     <p>Designed a GUI for a crowd-based requirements engineering
                        tool being developed by the UX/RE team using Bootstrap,
                         AngularJS, and BreezeJS.</p>
                   </li>
                   <li>
-                    <h4>Software Developer in Test, <i><a href="http://go.sap.com/canada/index.html">SAP SE</a></i></h4>
+                    <h4>Software Developer in Test, <i><a href="http://go.sap.com/canada/index.html">SAP SE <img src="assets/imgs/external-link-symbol.png"></a></i></h4>
                     <h5><i>Vancouver, CA - January 2014 to August 2014</i></h5>
                     <p>Tested install cases on legacy SAP software.
                        Learned about Agile development, coding in Python, and
@@ -87,7 +105,14 @@
                 </ul>
               </div>
               <div class="tabs-panel" id="extra">
-                <p>I am a big fan of video games, movies, and music in general. A combination of a desire to produce my own video game titles and an interest in directing/ special effects work in movies led me to ultimately pursue a second degree in Computer Science (although neither possibility has worked out so far - hey, I can dream, right?). I also love to travel, and I am proud to be both an American and a Canadian citizen. I hope to explore many more new places in my lifetime.</p>
+                <ul class="list-with-bullets">
+                  <li><a href="https://linkedin.com/in/risanewyearramirez/">LinkedIn <img src="assets/imgs/external-link-symbol.png"></a></li>
+                  <li><a href="https://xing.com/profile/Risa_NewyearRamirez">XING <img src="assets/imgs/external-link-symbol.png"></a></li>
+                  <li><a href="https://melissaanddavid.herokuapp.com/">I made this wedding website for my best friend's wedding. <img src="assets/imgs/external-link-symbol.png"></a></li>
+                  <li>I am currently in German level B1.2</li>
+                  <li>I have a passion for video games. My favorite genre is RPG, my favorite game company is Nintendo, and my favorite game of all time is the Legend of Zelda: Ocarina of Time.</li>
+                  <li>I also love movies, tv shows, board games, music, hiking, cooking, and traveling.</li>
+                </ul>
               </div>
             </div>
           </div>
