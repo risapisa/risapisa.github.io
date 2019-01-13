@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, li {
 .character-container {
 	padding: 1rem;
 	max-height: 38vw;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 .character-sheet {
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, li {
 }
 
 .tabs-panel {
-	overflow-y:scroll;
+	overflow-y: auto;
 	max-height: inherit;
 }
 
