@@ -12,6 +12,10 @@
 </head>
 <body>
   <div class="panel-parent">
+    <div class="panel game-panel mobile-users">
+    <!-- Will only be shown for mobile users -->
+      <p>Sorry! This site works best on tablet or desktop.</p>
+    </div>
     <div class="panel game-panel">
       <div class="start-title text-center">
         <div class="vertical-align">
@@ -22,9 +26,12 @@
       </div>
       <div id="character-sheet" class="character-sheet">
         <div class="row">
-          <div class="small-4 medium-4 columns border-right">
-            <div class="character-container">
-              <img class="thumbnail" src="assets/imgs/avatar.png">
+          <div class="small-12 medium-12 large-4 columns border-right">
+            <div class="row character-container">
+              <div class="small-6 medium-6 large-12">
+                <img class="thumbnail" src="assets/imgs/avatar.png">
+              </div>
+              <div class="small-6 medium-6 large-12">
               <ul>
                 <li class="stats-row"><label class="stats-label" for="character-name">Character Name:</label><div id="character-name" class="stats-text">Risa Newyear-Ramirez</div></li>
                 <li class="stats-row"><label class="stats-label" for="character-class">Character Class:</label><div id="character-class" class="stats-text">UI Developer</div></li>
@@ -48,8 +55,10 @@
                 </div></li>
               </ul>
             </div>
-          </div>
-          <div class="small-8 medium-8 columns">
+            </div>
+        </div>
+          <div class="small-12 medium-12 large-8 columns">
+            <div class="info-container">
             <ul class="tabs" data-tabs id="character-sheet-tabs" role="tablist">
               <li class="tabs-title is-active"><a href="#aboutMe" aria-selected="true">About Me</a></li>
               <li class="tabs-title"><a href="#school">Education</a></li>
@@ -113,6 +122,7 @@
                   <li>I have a passion for video games. My favorite genre is RPG, my favorite game company is Nintendo, and my favorite game of all time is the Legend of Zelda: Ocarina of Time.</li>
                   <li>I also love movies, tv shows, board games, music, hiking, cooking, and traveling.</li>
                 </ul>
+                </div>
               </div>
             </div>
           </div>

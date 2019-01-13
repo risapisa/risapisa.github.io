@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5, li {
 	vertical-align: middle;
 }
 
+.mobile-users {
+	display: none;
+}
+
 .panel-parent {
 	position: fixed;
 	left: 0;
@@ -109,6 +113,12 @@ h1, h2, h3, h4, h5, li {
 	height: inherit;
 }
 
+.character-container {
+	padding: 1rem;
+	max-height: 38vw;
+	overflow-y: scroll;
+}
+
 .character-sheet {
 	display: none;
 	height: inherit;
@@ -118,12 +128,12 @@ h1, h2, h3, h4, h5, li {
     -o-transition: opacity 3s ease-in-out;
 }
 
-.character-container {
-	padding: 1.5rem;
-}
-
 .border-right {
 	border-right: 1px solid black;
+}
+
+.info-container {
+	height: inherit;
 }
 
 .tabs, .tabs-content {
@@ -131,12 +141,82 @@ h1, h2, h3, h4, h5, li {
 }
 
 .tabs-content {
-	height: 35vw;
+	max-height: 32vw;
 }
 
 .tabs-panel {
 	overflow-y:scroll;
-	height:35vw;
+	max-height: inherit;
+}
+
+@media only screen and (max-width: 1440px) {
+	.thumbnail {
+		height: 7rem;
+	}
+}
+
+//for tablets and smaller desktop screens
+@media only screen and (max-width: 1024px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	h3 {
+		font-size: 1.1875rem;
+	}
+
+	h4 {
+		font-size: 1rem;
+	}
+
+	h5 {
+		font-size: .7rem;
+	}
+
+	label, .stats-text {
+		font-size : .5rem;
+	}
+
+	div, .tabs-title>a {
+		font-size: .6rem;
+	}
+
+	.stats-icon {
+		margin-right: 5px !important;
+	}
+
+	.tabs-title>a {
+		padding: 1rem;
+	}
+
+	.tabs-content {
+		max-height: 27vw;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.start-title {
+		padding: 20vw 17vw;
+	}
+
+	.game-panel {
+		height: 70vw;
+	}
+}
+
+//for mobile
+@media only screen and (max-width: 700px) {
+	p {
+		font-size: .7rem;
+		padding: 6rem 2rem;
+	}
+
+	.game-panel {
+		display: none;
+	}
+	.mobile-users {
+		display: block;
+	}
 }
 
 a {
@@ -154,10 +234,10 @@ ul {
 
 .list-with-bullets {
 	list-style: square inside !important;
+}
 
-	li {
-		margin-bottom: 1rem;
-	}
+.list-with-bullets li {
+	margin-bottom: 1rem;
 }
 
 .rounded-img {
